@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロジェクト紹介</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo"><i class="fab fa-node-js"></i> Olaf0321</a>
+    </header>
+
+    <main>
+        <h1 class="main-title">Mecari-Scraping</h1>
+
+        <!-- 代表画像 -->
+        <div class="main-image">
+            <video src="images/1.mp4" autoplay loop muted playsinline
+                style="width:100%; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.6);">
+                お使いのブラウザは動画タグに対応していません。
+            </video>
+        </div>
+
+        <!-- 下の2つの画像 -->
+        <div class="burns">
+            <img class="burn" src="images/2.png" alt="火傷サブ1">
+            <img class="burn" src="images/3.png" alt="火傷サブ2">
+        </div>
+
+        <div class="description">
+            <h1>Mercari Shop Product Image URL Fetcher</h1>
+            <p>
+                メルカリショップに登録されている自社商品（商品コード・商品名・価格）と紐づいた商品画像URLを一括取得するツールです。
+                最大 <strong>25,000商品以上</strong> のデータに対応し、取得した情報をCSV形式で出力します。
+            </p>
+
+            <h2>📌 機能概要</h2>
+            <ul>
+                <li>メルカリショップの登録商品情報を取得</li>
+                <ul>
+                    <li>商品コード</li>
+                    <li>商品名</li>
+                    <li>価格</li>
+                    <li>画像URL</li>
+                </ul>
+                <li>25,000点以上の商品データにも対応</li>
+                <li>出力形式はCSV（UTF-8 BOM付き）</li>
+                <li>将来的な利用や再実行にも耐えられる安定構造</li>
+                <li>メルカリの仕様変更にも対応しやすい構成</li>
+            </ul>
+
+            <h2>⚙️ 技術仕様</h2>
+            <ul>
+                <li>言語: Python 3.x</li>
+                <li>ライブラリ
+                    <ul>
+                        <li>requests（HTTPリクエスト送信）</li>
+                        <li>pandas（CSV作成・管理）</li>
+                        <li>beautifulsoup4（HTML解析）</li>
+                        <li>その他必要に応じてインストール</li>
+                    </ul>
+                </li>
+                <li>動作環境
+                    <ul>
+                        <li>Windows / Mac / Linux</li>
+                        <li>Python 3.8 以上推奨</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h2>📂 出力フォーマット（CSV）</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>商品コード</th>
+                        <th>商品名</th>
+                        <th>価格</th>
+                        <th>画像URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABC123</td>
+                        <td>商品A</td>
+                        <td>1500</td>
+                        <td>https://...</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ456</td>
+                        <td>商品B</td>
+                        <td>2000</td>
+                        <td>https://...</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2>🚀 インストール</h2>
+            <pre><code># 1. リポジトリをクローン
+git clone https://github.com/Olaf0321/-Mercari-Scraping-.git
+cd mercari-image-url-fetcher
+
+# 2. 必要ライブラリをインストール
+pip install -r requirements.txt
+  </code></pre>
+        </div>
+
+    </main>
+
+    <footer>
+        開発期間: 2025年7月〜2025年8月
+    </footer>
+
+</body>
+
+</html>
